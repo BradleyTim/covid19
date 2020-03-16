@@ -70,11 +70,11 @@ nav {
 .menu-item {
   padding-left: .85rem;
   font-size: 1.15rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 a {
-  color: #888;
+  color: #4e5b69;
   text-decoration: none;
 }
 </style>
