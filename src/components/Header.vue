@@ -3,15 +3,10 @@
     <nav>
       <h2 class="brand-name">
         <router-link to="/">
-            <a>COVID-19</a>
+            <a>COVID19</a>
           </router-link>
       </h2>
       <ul class="menu">
-        <li class="menu-item">
-          <router-link to="/">
-            <a>Home</a>
-          </router-link>
-        </li>
         <li class="menu-item">
           <router-link to="/countries">
             <a>Countries</a>
@@ -38,9 +33,9 @@ export default {
 header {
   width: 100%;
   background: #fff;
-  border-bottom: 1px solid #eee;
-  /* box-shadow: 0 0 2px #eee; */
+  padding: 1.5rem 0;
   margin-bottom: 1rem;
+  box-shadow: 0 5px 3px 0 #eee;
 }
 
 nav {
@@ -52,24 +47,31 @@ nav {
 }
 
 .brand-name {
-  color: #2c3e50 !important;
+  flex: 2;
   font-size: 1.5rem;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 
+.brand-name a {
+  color: #2c3e50 !important;
+}
+
 .menu {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   list-style: none;
 }
 
 .menu-item {
-  padding-left: 1rem;
-  font-size: 1rem;
+  padding-left: .85rem;
+  font-size: 1.15rem;
+  font-weight: 100;
 }
 
 a {
-  color: #777;
+  color: #888;
   text-decoration: none;
 }
 </style>
