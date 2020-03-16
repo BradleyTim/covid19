@@ -1,7 +1,22 @@
 <template>
   <section class="informational">
     <h3>Stay Safe</h3>
-    <p>Wash your hands regulary and self quarantine.</p>
+    <div class="info-container">
+      <p>
+      Wash your hands regulary with soap and running water or use an alcohol based hand
+       sanitizer.
+      </p>
+      <p>
+        Cough or sneeze into a disposable tissue or bent elbow, and
+        wash hands immediately. Dispose the tissue in atrash or burn it.
+      </p>
+      <p>
+        Avoid shaking hands, hugging or kissing with people with flu-like symptoms
+      </p>
+      <p>
+        Stay at home and avoid travelling when you have flu-like symptoms.
+      </p>
+    </div>
   </section>
 </template>
 
@@ -15,7 +30,7 @@ export default {
 <style scoped>
 .informational {
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 h3 {
@@ -25,9 +40,25 @@ h3 {
 }
 
 p {
-  padding: 1rem 0;
-  font-size: 1.15rem;
+  padding: .5rem 0;
+  font-size: .85rem;
   text-align: center;
   letter-spacing: 1px;
+
+  border: .5px solid #eee;
+  margin: .5rem 0;
+  padding: .75rem;
+}
+
+@media screen and (min-width: 860px) {
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+
+  p {
+    padding: 1rem;
+  }
 }
 </style>

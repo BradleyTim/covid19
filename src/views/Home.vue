@@ -82,6 +82,7 @@ export default {
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
+  text-align: center;
 }
 
 .loading {
@@ -98,11 +99,7 @@ export default {
     padding: 1rem 0 5rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .card {
-    margin-right: 1rem;
-    text-align: center;
+    grid-gap: 1rem;
   }
 }
 </style>
