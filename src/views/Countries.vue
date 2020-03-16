@@ -50,6 +50,7 @@ export default {
 .countries {
   width: 90%;
   margin: 0 auto;
+  z-index: -1;
 }
 
 .title {

@@ -17,9 +17,13 @@ export default {
 footer {
   width: 100%;
   padding: .5rem 0;
+  margin-top: .25rem;
   position: fixed;
   bottom: 0;
   right: 0;
+  background: #fff;
+  box-shadow: 0 -4px 4px 0 #eee;
+  z-index: 5;
 }
 
 .footer-container {
@@ -30,6 +34,7 @@ footer {
 p {
   font-size: 1rem;
   text-align: center;
+  /* color: #eee; */
 }
 
 a {
