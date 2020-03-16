@@ -11,7 +11,7 @@ export default {
   props: [],
   data() {
     return {
-      stats: [],
+      stats: null,
       title: 'Countries Stats',
     };
   },
@@ -24,7 +24,7 @@ export default {
     async fetchCountries() {
       const response = await fetch('https://covid19.mathdro.id/api/countries');
       const jsonData = await response.json();
-      // console.log(jsonData.iso3);
+      this.stats = jsonData.iso3;
     },
   },
   created() {
