@@ -1,10 +1,19 @@
 <template>
   <div class="home">
     <h3 class="title">Latest Statistics</h3>
-    <section v-if="!loading" class="info">
-      <div class="card">Confirmed Cases {{stats.confirmed}}</div>
-      <div class="card">Reported Deaths {{stats.deaths}}</div>
-      <div class="card">Recoveries {{stats.recovered}}</div>
+    <section v-if="!loading">
+      <div class="info">
+        <div class="card">
+          Confirmed Cases <span class="">{{stats.confirmed}}</span>
+        </div>
+        <div class="card">
+          Reported Deaths <span class="text-danger">{{stats.deaths}}</span>
+        </div>
+        <div class="card">
+          Recoveries <span class="text-success">{{stats.recovered}}</span>
+        </div>
+      </div>
+      <stay-safe></stay-safe>
     </section>
     <section v-if="loading" class="loading">
       <div>Loading...</div>
@@ -14,8 +23,13 @@
 
 
 <script>
+import StaySafe from '@/components/StaySafe.vue';
+
 export default {
   name: 'Home',
+  components: {
+    StaySafe,
+  },
   props: [],
   data() {
     return {
@@ -55,11 +69,13 @@ export default {
 .title {
   font-size: 1.5rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .info {
   width: 100%;
   padding: 1rem 0;
+  border-bottom: .5px solid #eee;
 }
 
 .card {
@@ -70,17 +86,17 @@ export default {
 }
 
 .loading {
-  text-align: left;
+  text-align: center;
   font-size: 1.25rem;
 }
 
 @media screen and (min-width: 860px) {
   .title {
-    text-align: center;
     margin-bottom: 1rem;
   }
 
   .info {
+    padding: 1rem 0 5rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
