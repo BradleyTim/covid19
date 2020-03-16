@@ -37,6 +37,7 @@ h3 {
   text-align: center;
   font-weight: 300;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 p {
