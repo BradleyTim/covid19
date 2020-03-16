@@ -22,6 +22,12 @@ export default {
 
 
 <style>
+:root {
+  --success: green;
+  --danger: red;
+  --warning: yellow;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -32,5 +38,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-warning {
+  color: var(--warning);
+}
+.text-success {
+  color: var(--success);
 }
 </style>
