@@ -42,6 +42,7 @@
 h3 {
   font-weight: 300;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 500px) {
