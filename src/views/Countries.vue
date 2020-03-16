@@ -5,7 +5,7 @@
       <div v-if="!loading">
         <div class="card"  v-for="(info, index) in stats" :key="index">
         <h3 class="country-name">{{info.countryRegion}}</h3>
-        <p class="state">Province/State: {{info.provinceState}}</p>
+        <p v-if="info.provinceState" class="state">Province/State: {{info.provinceState}}</p>
         <p class="confirmed">Confirmed Cases: {{info.confirmed}}</p>
         <p class="recovered">Recorvered: {{info.recovered}}</p>
         <p class="deaths">Deaths: {{info.deaths}}</p>
