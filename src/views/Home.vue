@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h3 class="title">Latest Stats</h3>
+    <h3 class="title">Latest Statistics</h3>
     <section v-if="!loading" class="info">
       <div class="card">Confirmed Cases {{stats.confirmed}}</div>
       <div class="card">Reported Deaths {{stats.deaths}}</div>
@@ -75,6 +75,11 @@ export default {
 }
 
 @media screen and (min-width: 860px) {
+  .title {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
   .info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -82,6 +87,7 @@ export default {
 
   .card {
     margin-right: 1rem;
+    text-align: center;
   }
 }
 </style>
