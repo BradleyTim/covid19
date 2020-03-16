@@ -3,7 +3,7 @@
     <h3 class="title">Latest Stats</h3>
     <section v-if="!loading" class="info">
       <div class="card">Confirmed Cases {{stats.confirmed}}</div>
-      <div class="card">Reported Deaths{{stats.deaths}}</div>
+      <div class="card">Reported Deaths {{stats.deaths}}</div>
       <div class="card">Recoveries {{stats.recovered}}</div>
     </section>
     <section v-if="loading" class="loading">
@@ -54,6 +54,7 @@ export default {
 
 .title {
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
 .info {
