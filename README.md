@@ -1,24 +1,8 @@
 # covid19
 
-## Project setup
-```
-npm install
-```
+## Project Description
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This is a VueJs app to inform the public on the reach and the latest data about COVID-19 (Also referred to as Corona-Virus).
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Vist live app
+See app at [https://info-covid19.now.sh/](https://info-covid19.now.sh/).
