@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="footer-contaner">
-      <p>Made with &#x2764; by <a href="https://twitter.com/geschenck__">geschenk__</a></p>
+      <p>Made with &#x2764; by <a href="https://twitter.com/geschenk__">geschenk__</a></p>
     </div>
   </footer>
 </template>
