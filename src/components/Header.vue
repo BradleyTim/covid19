@@ -32,7 +32,7 @@ export default {
 <style scoped>
 header {
   width: 100%;
-  background: #fff;
+  background: #2c3e50;
   padding: 1.5rem 0;
   margin-bottom: 2rem;
   box-shadow: 0 5px 3px 0 #eee;
@@ -58,7 +58,7 @@ nav {
 }
 
 .brand-name a {
-  color: #2c3e50 !important;
+  color: #eee;
 }
 
 .menu {
@@ -70,12 +70,12 @@ nav {
 
 .menu-item {
   padding-left: .85rem;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 300;
 }
 
 a {
-  color: #4e5b69;
+  color: #eee;
   text-decoration: none;
 }
 </style>
