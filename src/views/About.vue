@@ -2,24 +2,14 @@
   <div class="about">
     <div class="about-info">
       <h3>COVID-19</h3>
-      <span>
+      <div>
         The first case of the new Coronavirus COVID-19 was
-      </span>
-      <span>
         recorded on 31 December in Wuhan, China (WHO).
-      </span>
-      <span>
         Since then, many confirmed cases have been recorded worldwide.
-      </span>
-      <span>
         This site shows and tracks the near real-time status based
-      </span>
-      <span>
         on data from the Center for Systems Science
-      </span>
-      <span>
-        and Engineering (CSSE) at Johns Hopkins University and DXY.
-      </span>
+        and Engineering (CSSE) at Johns Hopkins University.
+      </div>
     </div>
   </div>
 </template>
@@ -28,6 +18,7 @@
 <style scoped>
 .about {
   width: 90%;
+  min-height: 100%;
   margin: 0 auto;
 }
 
