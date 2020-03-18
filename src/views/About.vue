@@ -32,7 +32,7 @@
 }
 
 .about-info {
-  margin-top: 5rem;
+  margin-top: 10rem;
   font-size: 1.25rem;
   border: 1px solid #eee;
   box-shadow: 3px 5px 0 0#eee;
