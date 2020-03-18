@@ -21,7 +21,7 @@ footer {
   position: fixed;
   bottom: 0;
   right: 0;
-  background: #fff;
+  background: #2c3e50;
   box-shadow: 0 -4px 4px 0 #eee;
   z-index: 5;
 }
@@ -34,11 +34,11 @@ footer {
 p {
   font-size: 1rem;
   text-align: center;
-  /* color: #eee; */
+  color: #eee;
 }
 
 a {
-  color: #2c3e50;
+  color: #eee;
   text-decoration: none;
 }
 </style>
