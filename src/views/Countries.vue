@@ -3,13 +3,13 @@
     <h3 class="title">{{title}}</h3>
     <section class="countries-container">
       <div v-if="!loading">
-        <div class="card"  v-for="(info, index) in stats" :key="index">
-        <h3 class="country-name">{{info.countryRegion}}</h3>
-        <p v-if="info.provinceState" class="state">Province/State: {{info.provinceState}}</p>
-        <p class="confirmed">Confirmed Cases: <span class="">{{info.confirmed}}</span></p>
-        <p class="recovered">Recorvered: <span class="text-success">{{info.recovered}}</span></p>
-        <p class="deaths">Deaths: <span class="text-danger">{{info.deaths}}</span></p>
-      </div>
+        <div class="card bg-default"  v-for="(info, index) in stats" :key="index">
+          <h3 class="country-name">{{info.countryRegion}}</h3>
+          <p v-if="info.provinceState" class="state">Province/State: {{info.provinceState}}</p>
+          <p class="confirmed">Confirmed Cases: <span class="">{{info.confirmed}}</span></p>
+          <p class="recovered">Recorvered: <span class="text-success">{{info.recovered}}</span></p>
+          <p class="deaths">Deaths: <span class="text-danger">{{info.deaths}}</span></p>
+        </div>
       </div>
       <div class="loading" v-if="loading">
         <p>Loading...</p>
@@ -66,6 +66,7 @@ export default {
 
 .card {
   border: 1px solid #eee;
+  border-radius: 3px;
   padding: 1rem;
   margin-bottom: 1rem;
 }
