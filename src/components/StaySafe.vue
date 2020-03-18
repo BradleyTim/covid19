@@ -47,6 +47,7 @@ p {
   letter-spacing: 1px;
 
   border: .5px solid #eee;
+  border-radius: 3px;
   margin: .75rem 0;
   padding: .75rem;
 }
