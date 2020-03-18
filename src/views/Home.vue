@@ -3,14 +3,14 @@
     <h3 class="title">Latest Statistics</h3>
     <section v-if="!loading">
       <div class="info">
-        <div class="card">
+        <div class="card bg-default text-default">
           Confirmed Cases <span class="">{{stats.confirmed}}</span>
         </div>
-        <div class="card">
-          Reported Deaths <span class="text-danger">{{stats.deaths}}</span>
+        <div class="card bg-danger text-danger">
+          Reported Deaths <span class="">{{stats.deaths}}</span>
         </div>
-        <div class="card">
-          Recoveries <span class="text-success">{{stats.recovered}}</span>
+        <div class="card bg-success text-success">
+          Recoveries <span class="">{{stats.recovered}}</span>
         </div>
       </div>
       <stay-safe></stay-safe>
@@ -67,7 +67,7 @@ export default {
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 300;
   text-align: center;
 }
@@ -78,11 +78,13 @@ export default {
 }
 
 .card {
-  border: 1px solid #eee;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
   text-align: center;
+  /* background: #eee; */
 }
 
 .loading {
@@ -92,6 +94,7 @@ export default {
 
 @media screen and (min-width: 860px) {
   .title {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
 

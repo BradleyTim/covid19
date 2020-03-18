@@ -23,9 +23,10 @@ export default {
 
 <style>
 :root {
-  --success: green;
-  --danger: red;
+  --success: #5cb85c;
+  --danger: #bf3f3f;
   --warning: yellow;
+  --default: #777;
 }
 
 * {
@@ -50,7 +51,26 @@ export default {
 .text-warning {
   color: var(--warning);
 }
+
+.text-default {
+  color: var(--default);
+}
 .text-success {
   color: var(--success);
+}
+
+.bg-default {
+  border-color: #ccc;
+  background: #eee;
+}
+
+.bg-danger {
+  border-color: #f55872;
+  background: #f8d7da;
+}
+
+.bg-success {
+  border-color: #66d16e;
+  background: #d4edda;
 }
 </style>
