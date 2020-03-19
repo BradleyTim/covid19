@@ -73,4 +73,12 @@ export default {
   border-color: #66d16e;
   background: #d4edda;
 }
+
+.loading {
+  text-align: center;
+}
+
+.loading img {
+  width: 125px;
+}
 </style>

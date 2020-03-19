@@ -12,8 +12,7 @@
         </div>
       </div>
       <div class="loading" v-if="loading">
-        <p>Loading...</p>
-        <!-- <img src="../assets/Spinner-1s-200px.svg" alt="spinner"> -->
+        <img src="@/assets/Spinner-1s-200px.svg" alt="loading spinner">
       </div>
     </section>
   </div>

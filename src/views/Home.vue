@@ -16,7 +16,7 @@
       <stay-safe></stay-safe>
     </section>
     <section v-if="loading" class="loading">
-      <div>Loading...</div>
+        <img src="@/assets/Spinner-1s-200px.svg" alt="loading spinner">
     </section>
   </div>
 </template>
@@ -78,18 +78,11 @@ export default {
 }
 
 .card {
-  /* border: 1px solid #ddd; */
   border-radius: 3px;
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 1.25rem;
   text-align: center;
-  /* background: #eee; */
-}
-
-.loading {
-  text-align: center;
-  font-size: 1.25rem;
 }
 
 @media screen and (min-width: 860px) {
