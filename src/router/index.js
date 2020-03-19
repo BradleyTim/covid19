@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
-import Countries from '../views/Countries.vue';
+// import Countries from '../views/Countries.vue';
 
 Vue.use(VueRouter);
 
@@ -14,7 +14,7 @@ const routes = [
   {
     path: '/countries',
     name: 'Countries',
-    component: Countries,
+    component: () => import(/* webpackChunkName: "countries" */ '../views/Countries.vue'),
   },
   {
     path: '/about',
