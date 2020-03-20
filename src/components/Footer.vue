@@ -18,9 +18,9 @@ footer {
   width: 100%;
   padding: 1rem 0;
   margin-top: .25rem;
-  position: fixed;
+  /* position: fixed;
   bottom: 0;
-  right: 0;
+  right: 0; */
   background: #2c3e50;
   box-shadow: 0 -4px 4px 0 #eee;
   z-index: 5;

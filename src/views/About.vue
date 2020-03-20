@@ -18,12 +18,11 @@
 <style scoped>
 .about {
   width: 90%;
-  min-height: 100%;
   margin: 0 auto;
 }
 
 .about-info {
-  margin-top: 10rem;
+  margin-top: 5rem;
   font-size: 1.25rem;
   border: 1px solid #eee;
   box-shadow: 3px 5px 0 0#eee;
