@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <Header></Header>
-    <router-view :key="$route.path"/>
+    <transition name="fade">
+      <router-view :key="$route.path"/>
+    </transition>
     <Footer></Footer>
   </div>
 </template>
@@ -84,5 +86,12 @@ export default {
 
 .loading img {
   width: 125px;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .4s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
