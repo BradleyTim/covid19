@@ -34,7 +34,7 @@ header {
   width: 100%;
   background: #2c3e50;
   padding: 1rem 0;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
   box-shadow: 0 5px 3px 0 #eee;
   position: fixed;
   top: 0;

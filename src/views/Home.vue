@@ -87,7 +87,7 @@ export default {
 
 @media screen and (min-width: 860px) {
   .home {
-    margin: 7rem auto;
+    margin: 1rem auto;
   }
 
   .title {
