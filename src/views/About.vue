@@ -3,12 +3,19 @@
     <div class="about-info">
       <h3>COVID-19</h3>
       <div>
-        The first case of the new Coronavirus COVID-19 was
+        <p>The first case of the new Coronavirus COVID-19 was
         recorded on 31 December in Wuhan, China (WHO).
         Since then, many confirmed cases have been recorded worldwide.
-        This site shows and tracks the near real-time status based
+        </p>
+        <p>
+          The Symptoms include fever, dry cough, sneezing,
+           headache and difficulty breathing.
+           They start within 14 days.
+        </p>
+        <p>This site shows and tracks the near real-time status based
         on data from the Center for Systems Science
         and Engineering (CSSE) at Johns Hopkins University.
+        </p>
       </div>
     </div>
   </div>
@@ -30,9 +37,13 @@
 }
 
 h3 {
-  font-weight: 300;
+  font-weight: 800;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
+}
+
+p {
+  padding: .35rem 0;
 }
 
 @media screen and (max-width: 500px) {
