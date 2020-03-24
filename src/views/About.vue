@@ -43,7 +43,7 @@ h3 {
 }
 
 p {
-  padding: .35rem 0;
+  padding: .45rem 0;
 }
 
 @media screen and (max-width: 500px) {
@@ -56,7 +56,7 @@ p {
   }
 
   h3, div {
-    text-align: left;
+    text-align: center;
   }
 }
 </style>

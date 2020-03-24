@@ -43,7 +43,7 @@ h3 {
 p {
   padding: .5rem 0;
   font-size: .85rem;
-  /* text-align: center; */
+  text-align: center;
   letter-spacing: 1px;
 
   border: .5px solid #eee;
@@ -69,6 +69,7 @@ p {
 
   p {
     padding: 1rem;
+    text-align: left;
   }
 }
 </style>
