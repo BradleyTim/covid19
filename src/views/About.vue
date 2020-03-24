@@ -50,10 +50,13 @@ p {
   .about-info {
     margin-top: 2rem;
     font-size: 1.25rem;
-    padding: 1rem;
+    padding: 1rem 0;
     border: none;
     box-shadow: none;
-    text-align: center;
+  }
+
+  h3, div {
+    text-align: left;
   }
 }
 </style>
