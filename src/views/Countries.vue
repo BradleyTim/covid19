@@ -40,7 +40,7 @@ export default {
       const response = await fetch(API_URL);
       const jsonData = await response.json();
       this.loading = false;
-      console.log(jsonData);
+      // console.log(jsonData);
       this.stats = jsonData;
     },
   },
