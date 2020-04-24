@@ -2,7 +2,24 @@
   <div class="countries">
     <h3 class="title">{{title}}</h3>
     <section class="countries-container">
+      <!-- <form>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search your Country"
+          v-model="country
+          @change="searchCountry(country)"
+        >
+      </form> -->
       <div v-if="!loading">
+        <!-- form here -->
+        <form>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search your Country"
+          >
+        </form>
         <div class="card bg-default"  v-for="(info, index) in stats" :key="index">
           <h3 class="country-name">{{info.country}}</h3>
           <!-- <p v-if="info.provinceState" class="state">
@@ -29,6 +46,7 @@ export default {
     return {
       stats: null,
       title: 'Countries Statistics',
+      country: '',
       loading: false,
     };
   },
@@ -40,8 +58,13 @@ export default {
       const response = await fetch(API_URL);
       const jsonData = await response.json();
       this.loading = false;
-      // console.log(jsonData);
       this.stats = jsonData;
+      // console.log(this.stats);
+    },
+    async searchCountry(country) {
+      const x = this.stats.filter((stat) => stat.country.toLowerCase() === country.toLowerCase());
+      console.log(x);
+      return x;
     },
   },
   created() {
@@ -82,5 +105,25 @@ export default {
 p {
   margin: .25rem 0;
   font-size: 1.15rem;
+}
+
+/* form styles */
+form {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.search-input {
+  /* display: block;
+  width: 100%; */
+  padding: .5rem;
+  font-size: 1.15rem;
+  color: #888;
+  border: 1px solid #2c3e50;
+  border-radius: 3px;
+}
+
+input:focus {
+  border-color: #2c3e50;
 }
 </style>
