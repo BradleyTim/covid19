@@ -35,6 +35,7 @@ export default {
   padding: 0;
   margin: 0;
   position: relative;
+  box-sizing: border-box;
 }
 
 #app {

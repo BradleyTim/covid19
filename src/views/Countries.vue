@@ -18,6 +18,8 @@
             type="text"
             class="search-input"
             placeholder="Search your Country"
+            v-model="country"
+            @change="searchCountry"
           >
         </form>
         <div class="card bg-default"  v-for="(info, index) in stats" :key="index">
@@ -53,13 +55,11 @@ export default {
   methods: {
     async fetchData() {
       this.loading = true;
-      // const API_URL = 'https://covid19.mathdro.id/api/confirmed';
-      const API_URL = 'https://coronavirus-19-api.herokuapp.com/countries';
+      const API_URL = process.env.VUE_APP_API_URL_COUNTRIES;
       const response = await fetch(API_URL);
       const jsonData = await response.json();
       this.loading = false;
       this.stats = jsonData;
-      // console.log(this.stats);
     },
     async searchCountry(country) {
       const x = this.stats.filter((stat) => stat.country.toLowerCase() === country.toLowerCase());
@@ -113,9 +113,9 @@ form {
   width: 100%;
 }
 
-.search-input {
-  /* display: block;
-  width: 100%; */
+input.search-input {
+  display: block;
+  width: 100%;
   padding: .5rem;
   font-size: 1.15rem;
   color: #888;

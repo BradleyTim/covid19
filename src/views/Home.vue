@@ -44,7 +44,8 @@ export default {
   methods: {
     async fetchData() {
       this.loading = true;
-      const response = await fetch('https://covid19.mathdro.id/api');
+      console.log(process.env.VUE_APP_API_URL_WORLD);
+      const response = await fetch(process.env.VUE_APP_API_URL_WORLD);
       const jsonData = await response.json();
       const { confirmed, deaths, recovered } = jsonData;
       this.loading = false;
