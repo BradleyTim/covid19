@@ -13,6 +13,11 @@
           </router-link>
         </li>
         <li class="menu-item">
+          <router-link to="/Search">
+            <a>Search</a>
+          </router-link>
+        </li>
+        <li class="menu-item">
           <router-link to="/about">
             About
           </router-link>

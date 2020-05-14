@@ -7,21 +7,13 @@
           type="text"
           class="search-input"
           placeholder="Search your Country"
-          v-model="country
+          v-model="country"
           @change="searchCountry(country)"
         >
       </form> -->
       <div v-if="!loading">
         <!-- form here -->
-        <form>
-          <input
-            type="text"
-            class="search-input"
-            placeholder="Search your Country"
-            v-model="country"
-            @change="searchCountry"
-          >
-        </form>
+        <Search />
         <div class="card bg-default"  v-for="(info, index) in stats" :key="index">
           <h3 class="country-name">{{info.country}}</h3>
           <!-- <p v-if="info.provinceState" class="state">
